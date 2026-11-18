@@ -372,7 +372,16 @@ footer {
 .footer-links a:hover {
     opacity: 0.6;
 }
-
+.toast-container {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 1090;
+    }
+.me-auto{
+    color: white;
+    text-align: left;
+}
 @media (max-width: 600px) {
 
    
