@@ -10,10 +10,20 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index-style.css">
+     <link href="https://jsdelivr.net" rel="stylesheet">
 </head>
 
 <body>
-
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-body">
+    This is a custom toast message with additional content like a horizontal rule and buttons.
+    <hr class="my-3" />
+    <div class="hstack gap-2">
+      <button type="button" class="btn-solid theme-primary btn-sm">Take action</button>
+      <button type="button" class="btn-solid theme-secondary btn-sm" data-bs-dismiss="toast">Close</button>
+    </div>
+  </div>
+</div>
     <header>
         <nav class="navbar">
 
@@ -125,5 +135,12 @@
         </div>
     </footer>
     <script src="index-script.js"></script>
+    <script src="https://jsdelivr.net"></script>
+    <script>
+      const toastElement = document.getElementById('myToast');
+      const toast = bootstrap.Toast.getOrCreateInstance(toastElement);
+      toast.show();
+    </script>
+
 </body>
 </html>
